@@ -5,15 +5,9 @@ subtitle: The Lightweight Scaffold of Gin Web
 comments: false
 ---
 
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 全功能 ORM (无限接近)
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 关联（包含一个，包含多个，属于，多对多，多态）
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 钩子 (在创建/保存/更新/删除/查找之前或之后)
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 预加载
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 事务
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 复合主键
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> SQL 生成器
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 数据库自动迁移
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 自定义日志
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 可扩展性, 可基于 GORM 回调编写插件
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 所有功能都被测试覆盖
-* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> 开发者友好
+* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Gin: 轻量级Web框架
+* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> GORM: ORM工具。本项目需要配合Mysql使用
+* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Go-jwt: jwt发放token
+* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Go-Redis: redis缓存
+* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> godotenv: 开发环境下的环境变量工具，方便使用环境变量
+* <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Gin-Cors: Gin框架提供的跨域中间件

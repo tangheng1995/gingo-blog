@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: GORM
-subtitle: The fantastic ORM library for Golang, aims to be developer friendly.
-description: GORM is a fantastic ORM library for Golang, aims to be developer friendly.
+title: GINGO
+subtitle: The Lightweight Scaffold of Gin Web Project for Golang, aims to be developer faster.
+description: The Lightweight Scaffold of Gin Web Project for Golang, aims to be developer faster.
 author: tangheng1995
 author_url: https://github.com/tangheng1995
 language: zh_CN

@@ -17,31 +17,10 @@ sidebar:
   docs:
     getting_started: 入门指南
     overview: 概览
-    declaring_models: 模型定义
-    conventions: 惯例
     connecting_to_the_database: 连接数据库
-    crud_interface: CRUD 接口
-    create: 创建
-    query: 查询
-    update: 更新
-    delete: 删除
-    associations: 关联
-    belongs_to: Belongs To
-    has_one: Has One
-    has_many: Has Many
-    many_to_many: Many To Many
-    preload: 预加载
-    tutorials: 教程
-    method_chaining: 链式操作
-    error_handling: 错误处理
-    hooks: 钩子
-    transactions: 事务
-    migration: 数据库迁移
-    raw_sql_and_builder: 原生 SQL 和 SQL 生成器
-    generic_interface: 通用数据库接口
-    advanced_topics: 高级主题
-    composite_primary_key: 复合主键
-    write_plugins: 创建插件
-    dialects: GORM Dialects
-    logger: 自定义Logger
-    change_log: 更新日志
+    connecting_to_the_redis: 连接Redis
+    
+    project: 项目结构
+    project_tree: 结构概览
+    common_package: Common包
+    

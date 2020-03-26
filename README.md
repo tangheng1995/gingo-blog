@@ -1,4 +1,4 @@
-# Gorm Offical Site
+# Gingo Offical Site
 
 This website is for [Gingo](http://github.com/tangheng1995/gingo), you can access its content at [http://gingo.importpkg.com](http://gingo.importpkg.com)
 

@@ -1,69 +1,27 @@
 ---
-title: GORM 指南
+title: Gingo 指南
 layout: page
 ---
 
-The fantastic ORM library for Golang, aims to be developer friendly.
+轻量级的Gin Web脚手架，意在快速开发web项目
 
 ## 概览
 
-* 全功能 ORM (无限接近)
-* 关联 (Has One, Has Many, Belongs To, Many To Many, 多态)
-* 钩子 (在创建/保存/更新/删除/查找之前或之后)
-* 预加载
-* 事务
-* 复合主键
-* SQL 生成器
-* 数据库自动迁移
-* 自定义日志
-* 可扩展性, 可基于 GORM 回调编写插件
-* 所有功能都被测试覆盖
-* 开发者友好
+1. [Gin](https://github.com/gin-gonic/gin): 轻量级Web框架，自称路由速度是golang最快的 
+2. [GORM](https://github.com/jinzhu/gorm): ORM工具。本项目需要配合Mysql使用 
+3. [Go-jwt](https://github.com/dgrijalva/jwt-go): jwt发放token
+4. [Go-Redis](https://github.com/go-redis/redis): redis缓存
+5. [godotenv](https://github.com/joho/godotenv): 开发环境下的环境变量工具，方便使用环境变量
+6. [Gin-Cors](https://github.com/gin-contrib/cors): Gin框架提供的跨域中间件
 
 ## 安装
 
-```sh
-go get -u github.com/jinzhu/gorm
+```text
+git clone git@github.com:tangheng1995/gingo.git
 ```
 
 ## 快速入门
 
-```go
-package main
-
-import (
-  "github.com/jinzhu/gorm"
-  _ "github.com/jinzhu/gorm/dialects/sqlite"
-)
-
-type Product struct {
-  gorm.Model
-  Code string
-  Price uint
-}
-
-func main() {
-  db, err := gorm.Open("sqlite3", "test.db")
-  if err != nil {
-    panic("failed to connect database")
-  }
-  defer db.Close()
-
-  // Migrate the schema
-  db.AutoMigrate(&Product{})
-
-  // 创建
-  db.Create(&Product{Code: "L1212", Price: 1000})
-
-  // 读取
-  var product Product
-  db.First(&product, 1) // 查询id为1的product
-  db.First(&product, "code = ?", "L1212") // 查询code为l1212的product
-
-  // 更新 - 更新product的price为2000
-  db.Model(&product).Update("Price", 2000)
-
-  // 删除 - 删除product
-  db.Delete(&product)
-}
+```text
+go run main.go route.go
 ```
