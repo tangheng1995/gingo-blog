@@ -6,30 +6,30 @@
 title: GORM
 subtitle: The fantastic ORM library for Golang, aims to be developer friendly.
 description: GORM is a fantastic ORM library for Golang, aims to be developer friendly.
-author: Jinzhu
-author_url: https://github.com/jinzhu
+author: tangheng1995
+author_url: https://github.com/tangheng1995
 language: zh_CN
 timezone: UTC
 source_dir: pages
 
 # URL
-url: http://gorm.io
+url: http://gingo.importpkg.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Start Guide
-start: "go get -u github.com/jinzhu/gorm"
+start: "go get -u github.com/tangheng1995/gingo"
 
 # Common Configuration
-twitter: zhangjinzhu
-github: jinzhu/gorm
-disqus_shortname: gorm
-algolia:
-  en:
-    api_key: 442683d88a109de42c6d01bb0c7c4cec
-    index_name: gorm
-google_tag_manager: GTM-WSNPD75
+# twitter: zhangjinzhu
+github: tangheng1995/gingo
+# disqus_shortname: gingo
+# algolia:
+#   en:
+#     api_key: 442683d88a109de42c6xxxxxxxxxxxx
+#     index_name: gingo
+#google_tag_manager: GTM-WSNxxxxx
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -49,7 +49,7 @@ theme: navy  # based from hexo offical site
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository: https://__GITHUB_TOKEN__@github.com/jinzhu/gorm.io.git
-  branch: gh-pages
+# deploy:
+#   type: git
+#   repository: https://__GITHUB_TOKEN__@github.com/jinzhu/gorm.io.git
+#   branch: gh-pages
