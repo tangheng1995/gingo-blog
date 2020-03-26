@@ -2,10 +2,7 @@
 menu:
   home: <i class="fa fa-home"></i>首页
   docs: <i class="fa fa-book"></i>文档
-  api: <i class="fa fa-cogs"></i>API
   github: <i class="fa fa-github"></i>Github
-  community: <i class="fa fa-slack"></i>社区
-  contribute: <i class="fa fa-rocket"></i>贡献
   search: 搜索文档...
 index:
   get_started: 开始使用
@@ -48,6 +45,3 @@ sidebar:
     dialects: GORM Dialects
     logger: 自定义Logger
     change_log: 更新日志
-    community: 社区
-    contribute: 贡献
-    translate: 翻译当前页面

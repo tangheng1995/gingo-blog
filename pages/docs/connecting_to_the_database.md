@@ -1,17 +1,17 @@
 ---
-title: Connecting to database
+title: 连接数据库
 layout: page
 ---
 
-## Connecting to database
+## 连接数据库
 
-In order to connect to a database, you need to import the database's driver first. For example:
+想要连接数据库，你需要先导入对应数据库的驱动，比如：
 
 ```go
 import _ "github.com/go-sql-driver/mysql"
 ```
 
-GORM has wrapped some drivers to make it easier to remember the import path. So you could import the mysql driver with:
+GORM 已经包装了一些驱动，以便更容易的记住导入路径，所以你可以这样导入 mysql 的驱动：
 
 ```go
 import _ "github.com/jinzhu/gorm/dialects/mysql"
@@ -20,15 +20,15 @@ import _ "github.com/jinzhu/gorm/dialects/mysql"
 // import _ "github.com/jinzhu/gorm/dialects/mssql"
 ```
 
-## Supported Databases
+## 所支持的数据库
 
 ### MySQL
 
-**NOTE:**
+**注意：**
 
-In order to handle `time.Time` correctly, you need to include `parseTime` as a parameter. ([More supported parameters](https://github.com/go-sql-driver/mysql#parameters))
+想要能正确的处理 `time.Time`，你需要添加 `parseTime` 参数。 ([更多支持的参数](https://github.com/go-sql-driver/mysql#parameters))
 
-In order to fully support UTF-8 encoding, you need to change `charset=utf8` to `charset=utf8mb4`. See this [article](https://mathiasbynens.be/notes/mysql-utf8mb4) for a detailed explanation.
+想要完全的支持 UTF-8 编码，你需要修改`charset=utf8` 为 `charset=utf8mb4`。 详情请查看 [utf8mb4](https://mathiasbynens.be/notes/mysql-utf8mb4).
 
 ```go
 import (
@@ -42,13 +42,12 @@ func main() {
 }
 ```
 
-If you want to specify the host, you need to use `()`. Example:  
-```
-user:password@(localhost)/dbname?charset=utf8&parseTime=True&loc=Local
-```
- 
-### PostgreSQL
+如果你想指定主机，你需要使用 `()`. 例如:
 
+    user:password@(localhost)/dbname?charset=utf8&parseTime=True&loc=Local
+    
+
+### PostgreSQL
 
 ```go
 import (
@@ -64,8 +63,7 @@ func main() {
 
 ### Sqlite3
 
-
-**NOTE:** You can also use `:memory:` instead of a path to a file. This will tell sqlite to use a temporary database in system memory. This is especially useful when writing tests for your application against GORM, your tests to hit an actual database, but also be performant as the database is located in memory.
+**注意:** 你也可以使用 `:memory:` 替换一个文件路径。 这会告诉 sqlite 使用内存作为一个临时数据。 当你针对 GORM 应用进行测试时，这特别有用，因为你的测试需要一个真正的数据库，并且该数据库位于内存中，性能也很好。
 
 ```go
 import (
@@ -81,7 +79,7 @@ func main() {
 
 ### SQL Server
 
-[Get started with SQL Server](https://www.microsoft.com/en-us/sql-server/developer-get-started/go), it can run on your [Mac](https://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/go/mac/), [Linux](https://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/go/ubuntu/) with Docker
+[Get started with SQL Server](https://www.microsoft.com/en-us/sql-server/developer-get-started/go), 它可以运行在你的 [Mac](https://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/go/mac/)、[Linux](https://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/go/ubuntu/) 和 Docker
 
 ```go
 import (
@@ -95,6 +93,6 @@ func main() {
 }
 ```
 
-## Unsupported Databases
+## 不支持的数据库
 
-GORM officially supports above four databases, you could write dialects for unsupported databases, refer [GORM Dialects](dialects.html)
+GORM 官方支持上述四个数据库，您可以为不受支持的数据库编写方言，具体请参阅 [GORM 方言](dialects.html)
