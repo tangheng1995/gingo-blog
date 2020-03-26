@@ -8,7 +8,7 @@ subtitle: The fantastic ORM library for Golang, aims to be developer friendly.
 description: GORM is a fantastic ORM library for Golang, aims to be developer friendly.
 author: Jinzhu
 author_url: https://github.com/jinzhu
-language: en
+language: zh_CN
 timezone: UTC
 source_dir: pages
 
