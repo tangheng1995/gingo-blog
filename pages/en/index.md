@@ -1,7 +1,7 @@
 ---
 layout: index
-description: The fantastic ORM library for Golang, aims to be developer friendly.
-subtitle: The fantastic ORM library for Golang
+description: The Lightweight Scaffold of Gin Web Project for Golang, aims to be developer faster.
+subtitle: The Lightweight Scaffold of Gin Web
 comments: false
 ---
 
